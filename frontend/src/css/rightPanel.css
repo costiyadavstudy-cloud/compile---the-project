@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+.rightPanel {
+  flex: 1 1 54%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  min-height: 97vh;
+  background: #0d1117;
+  font-family: "Inter", sans-serif;
+  width: 51vw;
+}
+
+.formWrap {
+  width: 100%;
+  max-width: 400px;
+}
+
+.tabRow {
+  display: flex;
+  border-bottom: 1px solid #212b36;
+  margin-bottom: 28px;
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 18px 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  color: #5c6577;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tabActive {
+  color: #e6e9ef;
+  border-bottom: 2px solid #8b7cf6;
+}
+
+.formTitle {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  font-size: 21px;
+  color: #e6e9ef;
+  margin: 0 0 6px;
+}
+
+.formSub {
+  color: #7d8798;
+  font-size: 13.5px;
+  margin: 0 0 26px;
+}
+
+.fieldBlock {
+  margin-bottom: 16px;
+}
+
+.fieldLabel {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  color: #5c6577;
+  margin-bottom: 7px;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  background: #0a0f15;
+  border: 1px solid #212b36;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.gutter {
+  width: 34px;
+  text-align: center;
+  color: #5c6577;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  background: #1a222c;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #212b36;
+}
+
+.fieldIcon {
+  color: #7d8798;
+  margin: 0 8px 0 12px;
+  flex-shrink: 0;
+}
+
+.fieldInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e6e9ef;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13.5px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.toggleBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 12px;
+  line-height: 0;
+  color: #7d8798;
+}
+
+.forgotRow {
+  text-align: right;
+  margin-bottom: 20px;
+  margin-top: -4px;
+}
+
+.forgotBtn {
+  background: none;
+  border: none;
+  color: #5c6577;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.submitBtn {
+  width: 100%;
+  background: #8b7cf6;
+  color: #0d0b1a;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.switchRow {
+  text-align: center;
+  color: #5c6577;
+  font-size: 12.5px;
+  margin-top: 22px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.switchBtn {
+  background: none;
+  border: none;
+  color: #8b7cf6;
+  cursor: pointer;
+  font-size: 12.5px;
+  font-family: "JetBrains Mono", monospace;
+}

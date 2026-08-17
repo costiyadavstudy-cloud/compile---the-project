@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #0D1117;
+  --line: #212B36;
+  --gutter: #1A222C;
+  --text: #E6E9EF;
+  --muted: #7D8798;
+  --comment: #5C6577;
+  --violet: #8B7CF6;
+  --amber: #E8B86D;
+  --blue: #7AA2F7;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.panel {
+  position: relative;
+  width: 48vw;
+  min-width: 320px;
+  height: 97vh;
+  background: var(--bg);
+  border-right: 1px solid var(--line);
+  overflow: hidden;
+  padding: 56px;
+}
+
+/* background activity grid — static, no randomness needed via JS */
+.gridBg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  padding: 40px;
+  pointer-events: none;
+  width: 95%;
+  overflow: hidden;
+  height: 94%;
+}
+.block {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+/* cycles a handful of opacity levels across the grid without JS */
+
+.webLogo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 60px;
+}
+.imgContain {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 15px;
+  height: 15px;
+  color: var(--bg);
+}
+.webName {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.mainBox {
+  position: relative;
+  z-index: 1;
+  max-width: 440px;
+}
+.headline {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.3;
+  color: var(--text);
+  margin: 0 0 18px;
+}
+.accent { color: var(--violet); }
+
+.shortNote {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.65;
+  max-width: 380px;
+}
+
+.terminalBox {
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+  background: #0A0F15;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.tText    { color: var(--text); }
+.tComment { color: var(--comment); }
+.tBlue    { color: var(--blue); }
+.tAmber   { color: var(--amber); }
+.tAccent  { color: var(--violet); }
+.cursor   { opacity: 0.9; }
+
+.gitLine {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--comment);
+  font-size: 12px;
+  font-family: "JetBrains Mono", monospace;
+}
+.gitIcon { width: 13px; height: 13px; }
+
+@media (max-width: 820px) {
+  .panel { display: none; }
+}
+.tLine{
+  display: flex;
+}
