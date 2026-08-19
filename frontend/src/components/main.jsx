@@ -9,6 +9,8 @@ createRoot(document.getElementById("root")).render(
     <div className="contain">
       <LeftPanel />
       <RightPanel />
+      {/* <MainPage /> */}
     </div>
   </StrictMode>,
 );
+// npm install nodemailer

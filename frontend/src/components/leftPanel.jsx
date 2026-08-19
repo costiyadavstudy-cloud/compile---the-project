@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "../css/leftPanel.css";
-import logo from "../assets/device.svg";
 
 let strs = [
   "$ compile --init",

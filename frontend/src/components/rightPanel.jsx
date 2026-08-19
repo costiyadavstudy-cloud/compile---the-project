@@ -1,8 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "../css/rightPanel.css";
 
 function rightPanel() {
   const [authWay, updateAuthWay] = useState("signUp");
+  const [authElements, updateAuthWay] = useState({
+    username:'',
+    email:'',
+    password:''
+  });
+  updateUserName()=
 
   function logoImg() {}
   return (
@@ -166,7 +172,7 @@ function rightPanel() {
               class="switchRow"
             >
               // new here?
-              <button class="switchBtn">create_account()</button>
+              <button class="switchBtn" onClick={()=>signUp}>create_account()</button>
             </p>
           </div>
         </div>
